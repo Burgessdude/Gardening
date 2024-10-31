@@ -343,15 +343,13 @@ div.photograph section img:last-child {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 50px auto 44px;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
   padding: 0.5rem 10px;
 }
 header a {
-  align-items: center;
+  padding-left: 8px;
   font-size: 1rem;
   font-weight: 300;
   color: #1d5f35;
