@@ -1,0 +1,139 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+div.photograph {
+    display: grid;
+    
+    section {
+        margin-left: 10px;
+        padding-top: 100px;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {border-bottom: 1px solid $greyColor;}
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+    a {
+        align-items: center;
+        font-size: 1rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+    img {
+        padding-right: 3rem;
+        padding-left: 8px;
+    }
+    span {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        color: $primaryColor;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    h2 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.2rem;
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    p {
+        padding: .5rem $gutter;
+        color: #333;
+        line-height: $leading;
+    }
+}// end main
+
+
+
+
+.swiper, .swiper img {
+    width: 100%;
+    height: auto;
+  }
+
+div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section{
+        padding: 7px;
+        img{
+            width: 100%;
+            height: auto;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+    } // end section
+} // end parent
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor
+} // end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+    a {color: $greyColor;}
+}// end footer

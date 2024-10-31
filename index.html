@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo45.png" alt="site logo" width="100"
+        srcset="images/logo45.png 1x, images/logo50.png 2x, images/logo75.png 3x">
+		<span>Greg's Garage Yardwork</span>
+        <a href="tel:123-456-7890">123-456-7890</a>
+        <button id="theButton"></button>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <ul id="theNav">
+            <li><a href="#">Reviews</a></li>
+            <li class="parent"><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Weeding</a></li>
+                <li><a href="#">Tree Replacement</a></li>
+                <li><a href="#">Mowing Lawns</a></li>
+            </ul>
+            </li>
+            <li class="active"><a href="#">About Us</a></li>
+            <li class="parent"><a href="#">Our Team</a>
+            <ul>
+                <li><a href="#">Greg</a></li>
+                <li><a href="#">Jake</a></li>
+                <li><a href="#">Johnny</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+
+        <p>Our talented team of designers, builders, and horticulture experts works closely with each client, 
+            bringing together innovative ideas and tried-and-true practices to develop landscapes that are 
+            both visually striking and environmentally responsible. We specialize in a range of services 
+            including water-wise landscaping, hardscaping, plant selection, and sustainable garden installations, 
+            ensuring that every project reflects both our high standards and your personal style.</p>
+
+        <p>Whether you're looking to create a serene backyard oasis, a vibrant garden, or a professional 
+            landscape for your business, Greg's Garage is here to make it a reality. Let us bring 
+            your outdoor dreams to life with personalized service and expert care every step of the way.</p> 
+        <h1>Some of our previous work</h1>   
+        <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/Firstimagesmall.jpg" media="(max-width: 400px)">
+            <source srcset="images/Firstimagemed.jpg" media="(max-width: 800px)">
+            <img src="images/Firstimagelarge.jpg" alt="SliderA" width="16" height="5">
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/Secondimagesmall.webp" media="(max-width: 400px)">
+            <source srcset="images/Secondimagemed.webp" media="(max-width: 800px)">
+            <img src="images/Secondimagelarge.webp" alt="SliderA" width="16" height="5">
+        </picture>
+      </div>
+
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/Thirdimagesmall.jpg" media="(max-width: 400px)">
+            <source srcset="images/Thirdimagemed.jpg" media="(max-width: 800px)">
+            <img src="images/Thirdimagelarge.jpg" alt="SliderA" width="16" height="5">
+        </picture>
+      </div>
+
+      
+
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+       
+
+        <div class="photograph">
+            <section>
+                <h2>Wow!</h2>
+                <img src="images/yard.webp" width="400" height="250" alt="yard">
+                <img src="images/burst.png" width="400" height="400" alt="mask">
+            </section>
+    
+            <section>
+                <h2>Look at that!</h2>
+                <img src="images/yard.webp" width="400" height="250" alt="yard">
+                <img src="images/flower.png" width="400" height="250" alt="mask">
+            </section>
+    
+            <section>
+                <h2>So amazing!</h2>
+                <img src="images/yard.webp" width="400" height="250" alt="yard">
+                <img src="images/grass.png" width="400" height="99" alt="mask">
+            </section>
+    
+            <section>
+                <h2>I need this!</h2>
+                <img src="images/yard.webp" width="400" height="250" alt="yard">
+                <img src="images/flowers.png" width="400" height="143" alt="mask">
+            </section>
+          </div>
+
+          <h1>Customers Say</h1>
+      <div class="parent">
+        <section>
+            <img src="images/person1.jpg" width="300" height="200" alt="customer One">
+            <p>This customer loves the way we landscaped his yard and would recommend him to anybody.</p>
+        </section>
+        <section>
+            <img src="images/person2.jpg" width="300" height="200" alt="customer One">
+            <p>Greg's Garage saved my day by being so helpful and so detailed with his flower usage.</p>
+        </section>
+      </div>
+     
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+            <p>&copy;  2024 &bull; Jacob Burgess </p>    
+    </footer>
+</div> <!-- end footer wrapper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html> 
