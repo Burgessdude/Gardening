@@ -343,23 +343,22 @@ div.photograph section img:last-child {
 }
 
 header {
-  -moz-column-gap: 10px;
-       column-gap: 10px;
   align-items: center;
   padding: 0.5rem 10px;
 }
 header a {
-  padding-left: 8px;
+  padding-left: 50px;
   font-size: 1rem;
   font-weight: 300;
   color: #1d5f35;
 }
 header img {
+  padding-top: 0.5rem;
   padding-right: 3rem;
-  padding-left: 8px;
+  padding-left: 0px;
 }
 header span {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #1d5f35;
 }
@@ -431,6 +430,9 @@ footer a {
     color: #555;
     width: 44px;
     height: 44px;
+    position: fixed;
+    top: 0.5rem;
+    right: 0;
     cursor: pointer;
   }
   #theButton::before {
